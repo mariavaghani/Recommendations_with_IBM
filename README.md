@@ -3,16 +3,16 @@
 For this project we analyzed the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles they will like. 
 
 ## Libraries Used:
-Python 3.7 and above
-Pandas
-Numpy
-Matplotlib
-pickle
-RE
-NLTK
-Sklearn
-tqdm
-Jupyter
+- Python 3.7 and above
+- Pandas
+- Numpy
+- Matplotlib
+- pickle
+- RE
+- NLTK
+- Sklearn
+- tqdm
+- Jupyter
 
 ## Overview
 ### I. Exploratory Data Analysis
@@ -45,6 +45,25 @@ Given the amount of content available for each article, there are a number of di
 - Tokenize function to tokenize the title of each article
 - Created df_to_analyze to combine all the articles available on the platform, whether or not any user interacted with the article
 - Find similar articles function uses the output vector of tfidf class to determine which articles are the most similar to the article in question
+- Function that performs content recommendations
+- Function that combines all the recommendations above and lets user choose what kind of recommendations they want to get
 
-V. Matrix Factorization
-Finally, we will complete a machine learning approach to building recommendations. Using the user-item interactions, we will build out a matrix decomposition. Using the decomposition, we will get an idea of how well we can predict new articles an individual might interact with. We will finally discuss which methods we might use moving forward, and how we might test how well our recommendations are working for engaging users.
+### V. Matrix Factorization
+Finally, we completed a machine learning approach to building recommendations. Using the user-item interactions, we built out a matrix decomposition. Using the decomposition, we got an idea of how well we can predict new articles an individual might interact with. We finally discussed which methods we might use moving forward, and how we might test how well our recommendations are working for engaging users.
+-Number of Latent Features and train-test accuracy analysis
+-FunkSVD function and predictions
+
+## Files
+- Recommendations_with_IBM.ipynb: Project submission recommendation notebook
+- Recommendations_with_IBM.html: The above notebook in html format.
+- README.md -
+- project_tests.py - tests provided by Udacity
+- top_10.p - pickle provided by Udacity
+- top_20.p - pickle provided by Udacity
+- top_5.p - pickle provided by Udacity
+- user_item_matrix.p - pickle provided by Udacity
+- data/articles_community.csv - project dataset provided by Udacity
+- user-item-interactions.csv - project dataset provided by Udacity
+
+## Acknowledgements
+I wish to thank IBM Watson Studio platform for dataset, and thank Udacity for advice and review.
